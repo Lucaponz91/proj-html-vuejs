@@ -24,6 +24,7 @@
       </h3>
       <a href=""><span>JOIN US TODAY</span></a>
     </section>
+    <span class="glyphicon glyphicon-triangle-top" style="color: white;"></span>
   </div>
 </template>
 
@@ -39,7 +40,9 @@ export default {
 .header_container {
   // background-color: #111315;
   background-image: url("../assets/images/home-banner.jpg");
-  height: 1079px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 937px;
   .navbar {
     padding-inline: 75px;
     padding-top: 30px;
@@ -67,25 +70,25 @@ li {
 .join_today {
   color: white;
 }
-.header_text{
-    margin-top: 225px;
-    color: white;
-    h1{
-        font-size: 100px;
-        font-weight: 900;
-    }
-    h3{
-        font-size: 20px;
-        margin-top: 75px;
-        margin-bottom: 60px;
-        color: darkgrey;
-    }
-    
-    a{
-        text-decoration: none;
-        color: rgb(189, 189, 189);
-        border: 2px solid rgb(104, 104, 104);
-        padding: 23px 39px;
-    }
+.header_text {
+  margin-top: 225px;
+  color: white;
+  h1 {
+    font-size: 100px;
+    font-weight: 900;
+  }
+  h3 {
+    font-size: 20px;
+    margin-top: 75px;
+    margin-bottom: 60px;
+    color: darkgrey;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    border: 2px solid rgb(104, 104, 104);
+    padding: 23px 39px;
+  }
 }
 </style>
