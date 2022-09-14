@@ -75,7 +75,7 @@ li {
   color: white;
   h1 {
     font-size: 100px;
-    font-weight: 900;
+    font-weight: 700;
   }
   h3 {
     font-size: 20px;

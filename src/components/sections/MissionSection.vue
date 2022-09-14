@@ -1,20 +1,30 @@
 <template>
   <div class="main_container">
-    
-    <MissionSection/>
-
+    <section class="mission">
+      <div class="mission_text d-flex flex-column align-items-center">
+        <h2>WORLD CLASS Fitness</h2>
+        <div class="divider">
+          <img src="../../assets/images/divider-xx-red.png" alt="divider" />
+        </div>
+        <p>
+          At Avada Gym, everything we do from top to bottom is of the highest
+          quality to ensure we’re equipped to help you reach your goals of a
+          healthy and fit lifestyle.
+        </p>
+      </div>
+      <div class="sidiv"></div>
+    </section>
   </div>
 </template>
 
 <script>
-import MissionSection from './sections/MissionSection.vue';
-export default { components: { MissionSection } };
+export default {
+
+}
 </script>
 
 <style lang="scss" scoped>
-.main_container {
-  background-color: #25292b;
-  .mission {
+    .mission {
     padding-top: 130px;
     padding-bottom: 130px;
     position: relative;
@@ -51,5 +61,5 @@ export default { components: { MissionSection } };
 
     border-top: 30px solid #25292b;
   }
-}
+
 </style>
