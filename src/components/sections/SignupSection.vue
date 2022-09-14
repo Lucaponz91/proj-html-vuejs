@@ -5,7 +5,7 @@
       <div class="signup_forms">
         <h3>Sign Up For A Free Training Session!</h3>
         <form class="d-flex flex-column align-items-start form_container">
-          <div class="form-group ">
+          <div class="form-group">
             <span>Name</span>
             <input
               type="email"
@@ -24,9 +24,8 @@
               placeholder="Email"
             />
           </div>
-          
         </form>
-        <button type="submit" class="btn btn_submit">START NOW!</button>
+        <button type="submit" class=" btn_submit">START NOW!</button>
       </div>
     </div>
   </section>
@@ -39,6 +38,7 @@ export default {};
 <style lang="scss" scoped>
 .signup_section {
   padding-top: 130px;
+  padding-bottom: 130px;
   background-color: #1e2123;
 }
 .signup_forms {
@@ -47,22 +47,31 @@ export default {};
     margin-bottom: 45px;
   }
 }
-.btn_submit{
-    background-color: #EE6059;
+.btn_submit {
+  background-color: #ee6059;
+  margin-top: 40px;
+  width: 100%;
+  border: none;
+  color: white;
+  height: 50px;
 }
-form{
-    input{
-        background-color: #222527;
-    }
+form {
+  input {
+    background-color: #222527;
+    margin-top: 20px;
+  }
 
-    span{
-        color: white;
-        text-align: left;
-    }
+  span {
+    color: white;
+    text-align: left;
+    margin-top: 23px;
+  }
 }
-.form_container{
-    .form-group{
-    width: 100%;}
+.form_container {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
-
 </style>

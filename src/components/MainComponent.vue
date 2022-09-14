@@ -3,6 +3,7 @@
     
     <MissionSection/>
     <SignupSection/>
+    <ServicesSection/>
 
   </div>
 </template>
@@ -10,7 +11,8 @@
 <script>
 import MissionSection from './sections/MissionSection.vue';
 import SignupSection from './sections/SignupSection.vue';
-export default { components: { MissionSection, SignupSection } };
+import ServicesSection from './sections/ServicesSection.vue';
+export default { components: { MissionSection, SignupSection, ServicesSection } };
 </script>
 
 <style lang="scss" scoped>
