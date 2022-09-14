@@ -17,6 +17,13 @@
         <a href=""><span class="join_today">JOIN TODAY</span></a>
       </div>
     </section>
+    <section class="header_text">
+      <h1>NO PAIN NO GAIN</h1>
+      <h3>
+        Motivation is what gets you started. Habit is what keeps you going.
+      </h3>
+      <a href=""><span>JOIN US TODAY</span></a>
+    </section>
   </div>
 </template>
 
@@ -33,7 +40,7 @@ export default {
   // background-color: #111315;
   background-image: url("../assets/images/home-banner.jpg");
   height: 1079px;
-  .navbar{
+  .navbar {
     padding-inline: 75px;
     padding-top: 30px;
   }
@@ -43,7 +50,7 @@ ul {
   margin: 0%;
 }
 li {
-    padding-inline: 40px;
+  padding-inline: 40px;
   color: white;
   a {
     text-decoration: none;
@@ -53,11 +60,32 @@ li {
 .button {
   a {
     padding: 17px 38px;
-    background-color: #EE6059;
+    background-color: #ee6059;
     text-decoration: none;
   }
 }
 .join_today {
   color: white;
+}
+.header_text{
+    margin-top: 225px;
+    color: white;
+    h1{
+        font-size: 100px;
+        font-weight: 900;
+    }
+    h3{
+        font-size: 20px;
+        margin-top: 75px;
+        margin-bottom: 60px;
+        color: darkgrey;
+    }
+    
+    a{
+        text-decoration: none;
+        color: rgb(189, 189, 189);
+        border: 2px solid rgb(104, 104, 104);
+        padding: 23px 39px;
+    }
 }
 </style>
