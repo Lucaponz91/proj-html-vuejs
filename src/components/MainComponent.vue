@@ -2,13 +2,15 @@
   <div class="main_container">
     
     <MissionSection/>
+    <SignupSection/>
 
   </div>
 </template>
 
 <script>
 import MissionSection from './sections/MissionSection.vue';
-export default { components: { MissionSection } };
+import SignupSection from './sections/SignupSection.vue';
+export default { components: { MissionSection, SignupSection } };
 </script>
 
 <style lang="scss" scoped>
