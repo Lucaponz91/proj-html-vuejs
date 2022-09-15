@@ -1,31 +1,36 @@
 <template>
   <section class="signup_section">
-    <div class="container d-flex flex-row justify-content-between">
-      <img src="../../assets/images/home_img-compressor.jpg" alt="signupimg" />
-      <div class="signup_forms">
-        <h3>Sign Up For A Free Training Session!</h3>
-        <form class="d-flex flex-column align-items-start form_container">
-          <div class="form-group">
-            <span>Name</span>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="Name"
-            />
-          </div>
-          <div class="form-group">
-            <span>Email</span>
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-              placeholder="Email"
-            />
-          </div>
-        </form>
-        <button type="submit" class=" btn_submit">START NOW!</button>
+    <div class="signup_container">
+      <div class="container d-flex flex-row justify-content-between">
+        <img
+          src="../../assets/images/home_img-compressor.jpg"
+          alt="signupimg"
+        />
+        <div class="signup_forms">
+          <h3>Sign Up For A Free Training Session!</h3>
+          <form class="d-flex flex-column align-items-start form_container">
+            <div class="form-group">
+              <span>Name</span>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Name"
+              />
+            </div>
+            <div class="form-group">
+              <span>Email</span>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Email"
+              />
+            </div>
+          </form>
+          <button type="submit" class="btn_submit">START NOW!</button>
+        </div>
       </div>
     </div>
   </section>
@@ -36,6 +41,10 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+  .signup_container{
+    width: 1100px;
+    margin: auto;
+  }
 .signup_section {
   padding-top: 130px;
   padding-bottom: 130px;
