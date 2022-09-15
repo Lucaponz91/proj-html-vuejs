@@ -8,7 +8,7 @@
       </div>
       <div class="header_list d-flex flex-row align-items-center">
         <ul class="d-flex flex-row">
-          <li v-for="link in headerLinks" :key="link.text">
+          <li v-for="link in headerLinks" :key="link.text" :class="active ?  'active' : ''">
             <a :href="link.href"> {{ link.text }}</a>
           </li>
         </ul>
@@ -55,10 +55,20 @@ ul {
 li {
   padding-inline: 40px;
   color: white;
+  // transition: color .5s ease;
+  
   a {
     text-decoration: none;
     color: white;
+    // transition: color .5s ease;
   }
+}
+.active{
+  color: #EE6059;
+}
+a:hover{
+  color: #EE6059;
+  transition: color .5s ease;
 }
 .button {
   a {

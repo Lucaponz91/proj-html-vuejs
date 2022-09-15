@@ -27,26 +27,32 @@ export default {
         {
           text: "HOME",
           href: "noref",
+          active: true
         },
         {
           text: "ABOUT US",
           href: "noref",
+          active: false
         },
         {
           text: "FACILITIES",
           href: "noref",
+          active: false
         },
         {
           text: "MEMBERSHIP",
           href: "noref",
+          active: false
         },
         {
           text: "TESTIMONIALS",
           href: "noref",
+          active: false
         },
         {
           text: "BLOG",
           href: "noref",
+          active: false
         },
       ],
     };
