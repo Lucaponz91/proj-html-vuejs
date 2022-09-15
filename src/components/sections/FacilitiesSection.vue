@@ -61,15 +61,16 @@ export default {};
   flex-wrap: wrap;
   margin: auto;
   row-gap: 42px;
-  transition: transform 0.4s ease;
-  :hover{
+//   transition: transform 0.4s ease;
+  :hover img{
     transform: scale(1.05);
-    transition: transform 0.4s ease;
+    // transition: transform 0.4s ease-in-out;
     box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
 
   }
   img{
     width: 325px;
+    transition: transform .5s ease;
   }
 }
 </style>

@@ -6,6 +6,10 @@
     <ServicesSection/>
     <ResultsSection/>
     <FacilitiesSection/>
+    <QuoteSection/>
+    <TrainersSection/>
+    <PerformanceSection/>
+    <SubscribeSection/>
 
   </div>
 </template>
@@ -16,7 +20,11 @@ import SignupSection from './sections/SignupSection.vue';
 import ServicesSection from './sections/ServicesSection.vue';
 import ResultsSection from './sections/ResultsSection.vue';
 import FacilitiesSection from './sections/FacilitiesSection.vue';
-export default { components: { MissionSection, SignupSection, ServicesSection, ResultsSection, FacilitiesSection } };
+import QuoteSection from './sections/QuoteSection.vue';
+import TrainersSection from './sections/TrainersSection.vue';
+import PerformanceSection from './sections/PerformanceSection.vue';
+import SubscribeSection from './sections/SubscribeSection.vue';
+export default { components: { MissionSection, SignupSection, ServicesSection, ResultsSection, FacilitiesSection, QuoteSection, TrainersSection, PerformanceSection, SubscribeSection } };
 </script>
 
 <style lang="scss" scoped>
