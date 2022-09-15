@@ -65,12 +65,16 @@ export default {
     }
 .results {
   background-color: #25292b;
-  padding-bottom: 250px;
+  padding-bottom: 230px;
   .results_container {
     width: 1100px;
     margin: auto;
     margin-top: 125px;
   }
+}
+.divider_container{
+    margin-top: 45px;
+    margin-bottom: 50px;
 }
 .card_results{
     padding: 15px;
