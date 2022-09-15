@@ -4,6 +4,7 @@
     <MissionSection/>
     <SignupSection/>
     <ServicesSection/>
+    <ResultsSection/>
 
   </div>
 </template>
@@ -12,7 +13,8 @@
 import MissionSection from './sections/MissionSection.vue';
 import SignupSection from './sections/SignupSection.vue';
 import ServicesSection from './sections/ServicesSection.vue';
-export default { components: { MissionSection, SignupSection, ServicesSection } };
+import ResultsSection from './sections/ResultsSection.vue';
+export default { components: { MissionSection, SignupSection, ServicesSection, ResultsSection } };
 </script>
 
 <style lang="scss" scoped>
