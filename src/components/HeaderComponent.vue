@@ -8,8 +8,10 @@
       </div>
       <div class="header_list d-flex flex-row align-items-center">
         <ul class="d-flex flex-row">
-          <li v-for="link in headerLinks" :key="link.text" :class="active ?  'active' : ''">
-            <a :href="link.href"> {{ link.text }}</a>
+          <li v-for="link in headerLinks" :key="link.text">
+            <a :class="link.active ? 'active' : ''" :href="link.href">
+              {{ link.text }}</a
+            >
           </li>
         </ul>
       </div>
@@ -24,7 +26,7 @@
       </h3>
       <a href=""><span>JOIN US TODAY</span></a>
     </section>
-    <span class="glyphicon glyphicon-triangle-top" style="color: white;"></span>
+    <span class="glyphicon glyphicon-triangle-top" style="color: white"></span>
   </div>
 </template>
 
@@ -56,20 +58,23 @@ li {
   padding-inline: 40px;
   color: white;
   // transition: color .5s ease;
-  
+
   a {
     text-decoration: none;
     color: white;
     // transition: color .5s ease;
   }
 }
-.active{
-  color: #EE6059;
+.active {
+  color: #ee6059;
 }
-a:hover{
-  color: #EE6059;
-  transition: color .5s ease;
+li{
+  a:hover {
+  color: #ee6059;
+  transition: color 0.5s ease;
 }
+}
+
 .button {
   a {
     padding: 17px 38px;
@@ -99,6 +104,14 @@ a:hover{
     color: rgb(189, 189, 189);
     border: 2px solid rgb(104, 104, 104);
     padding: 23px 39px;
+    
   }
+  a:hover {
+      text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 23px 39px;
+      
+    }
 }
 </style>
