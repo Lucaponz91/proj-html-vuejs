@@ -67,7 +67,7 @@ li {
   a {
     text-decoration: none;
     color: white;
-    // transition: color .5s ease;
+    transition: color .5s ease;
   }
 }
 .active {
@@ -76,7 +76,6 @@ li {
 li{
   a:hover {
   color: #ee6059;
-  transition: color 0.5s ease;
 }
 }
 

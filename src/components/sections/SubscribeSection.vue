@@ -50,6 +50,10 @@ export default {};
   padding: 18px 25px;
   font-size: 20px;
   margin-bottom: 140px;
+  transition: all .5s ease;
+  &:hover{
+    border: 1px solid white;
+  color: white;}
 }
 h5{
     color: white;

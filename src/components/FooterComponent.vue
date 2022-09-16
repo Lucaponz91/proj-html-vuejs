@@ -8,10 +8,10 @@
           <h5>COME FIND US</h5>
           <h5>12345 North Main Street New York, NY 555555</h5>
           <p>
-            Phone: <a href=""><span>1.800.555.6789</span></a>
+            Phone: <a href=""><span class="highlight">1.800.555.6789</span></a>
           </p>
           <p>
-            Email: <a href=""><span>info@your-domain.com</span></a>
+            Email: <a href=""><span class="highlight">info@your-domain.com</span></a>
           </p>
         </div>
         <div
@@ -27,10 +27,10 @@
           <h5>RECENT POSTS</h5>
           <ul>
             <li>
-              <a href="">> Train with free weights or your body weight?</a>
+              <a href=""> <span class="highlight">> Train with free weights or your body weight?</span></a>
             </li>
             <li>
-              <a href="">> Nutritional advice that will keep you training</a>
+              <a href=""><span class="highlight">> Nutritional advice that will keep you training</span></a>
             </li>
           </ul>
         </div>
@@ -62,7 +62,7 @@
     >
       <p>
         © Copyright 2015 | Avada Theme by ThemeFusion | All Rights Reserved |
-        Powered by <a href="">Boolean Classe70</a>
+        Powered by <a href=""><span class="highlight"> Boolean Classe70</span></a>
       </p>
       <div class="icon_container">
         <a href=""><font-awesome-icon icon="fa-brands fa-facebook-f" /></a>
@@ -79,6 +79,12 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+  .highlight{
+    transition: color .5s ease;
+    &:hover{
+    color:#ee6059;
+  }
+  }
 .footer_container {
   background: linear-gradient(180deg, #25292b 70%, #1e2123 30%);
   padding: 90px 0px;
@@ -139,6 +145,10 @@ p {
     background-color: #ee6059;
     margin-inline: 5px;
     border-radius: 2px;
+    transition: all .5s ease;
+    &:hover{
+      background-color: #1E2123;
+    }
   }
 }
 </style>

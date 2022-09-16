@@ -64,11 +64,11 @@
               nisl, onare volutpat.
             </p>
             <div class="icon_container">
-              <a href=""
+              <a  href=""
                 ><font-awesome-icon icon="fa-brands fa-facebook-f"
               /></a>
-              <a href=""><font-awesome-icon icon="fa-brands fa-twitter" /></a>
-              <a href=""><font-awesome-icon icon="fa-brands fa-instagram" /></a>
+              <a  href=""><font-awesome-icon  icon="fa-brands fa-twitter" /></a>
+              <a class="tooltiptext" href=""><font-awesome-icon icon="fa-brands fa-instagram" /></a>
             </div>
           </div>
         </div>
@@ -105,6 +105,10 @@ export default {};
   img {
     border-radius: 0%;
     width: 100%;
+    transition: all  .5s ease;
+    &:hover{
+      transform: scale(1.05);
+    }
   }
 }
 .card_container {
@@ -155,6 +159,12 @@ export default {};
   padding: 18px 25px;
   font-size: 20px;
   margin-bottom: 140px;
+  transition: all .5s ease;
+  &:hover{
+    border: 1px solid white;
+  color: white;
+
+  }
 }
 .sidiv {
   position: relative;
@@ -174,4 +184,31 @@ export default {};
 
   border-top: 30px solid #1e2123;
 }
+// // tooltip
+// /* Tooltip container */
+// .tooltip {
+//   position: relative;
+//   display: inline-block;
+//   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+// }
+
+// /* Tooltip text */
+// .tooltip .tooltiptext {
+//   visibility: hidden;
+//   width: 120px;
+//   background-color: black;
+//   color: #fff;
+//   text-align: center;
+//   padding: 5px 0;
+//   border-radius: 6px;
+ 
+//   /* Position the tooltip text - see examples below! */
+//   position: absolute;
+//   z-index: 1;
+// }
+
+// /* Show the tooltip text when you mouse over the tooltip container */
+// .tooltip:hover .tooltiptext {
+//   visibility: visible;
+// }
 </style>
