@@ -108,6 +108,7 @@ li{
     color: rgb(189, 189, 189);
     border: 2px solid rgb(104, 104, 104);
     padding: 23px 39px;
+    transition: all .5s ease;
     
   }
   a:hover {
