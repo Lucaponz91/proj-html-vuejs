@@ -7,7 +7,7 @@
         v-for="service in services"
         :key="service.name"
       >
-        <div class="icon">
+        <a href=""><div class="icon">
           <font-awesome-icon :icon="service.image" class="faw_icon" />
         </div>
         <div class="card-body">
@@ -16,7 +16,7 @@
           <p class="card-text">
             {{ service.text }}
           </p>
-        </div>
+        </div></a>
       </div>
     </div>
   </section>
@@ -76,6 +76,10 @@ export default {
   margin-top: 120px;
   margin-bottom: 120px;
   border: none;
+  a{
+    text-decoration: none;
+    color: #EE6059;
+  }
 }
 .services_card:hover {
   .faw_icon {
