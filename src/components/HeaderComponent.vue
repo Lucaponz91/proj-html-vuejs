@@ -26,7 +26,7 @@
       </h3>
       <a href=""><span>JOIN US TODAY</span></a>
     </section>
-    <span class="glyphicon glyphicon-triangle-top" style="color: white"></span>
+    
   </div>
 </template>
 
