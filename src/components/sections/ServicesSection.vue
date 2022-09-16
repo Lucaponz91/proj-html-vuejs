@@ -68,6 +68,7 @@ export default {
   font-size: 17px;
   font-weight: 600;
   color: white;
+  transition: all .5s ease;
 }
 .services_card {
   background-color: rgba(245, 245, 245, 0);
