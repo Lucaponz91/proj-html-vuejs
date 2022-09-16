@@ -1,7 +1,7 @@
 <template>
   <div class="header_container">
     <section
-      class="navbar d-flex flex-row justify-content-between align-items-center"
+      class="navbar d-flex flex-row justify-content-between align-items-center header_navbar"
     >
       <div class="logo">
         <img src="../assets/images/gym_logo_1x.png" alt="gym_logo" />
@@ -50,6 +50,11 @@ export default {
     padding-top: 30px;
   }
 }
+// .header_navbar{
+//   position: fixed;
+//     top: 0%;
+//     z-index: 2;
+// }
 ul {
   list-style: none;
   margin: 0%;

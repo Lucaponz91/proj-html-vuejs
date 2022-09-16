@@ -8,7 +8,8 @@
         :key="service.name"
       >
         <div class="icon">
-        <font-awesome-icon :icon="service.image" class="faw_icon" /></div>
+          <font-awesome-icon :icon="service.image" class="faw_icon" />
+        </div>
         <div class="card-body">
           <h5 class="card-title service_name">{{ service.name }}</h5>
           <img class="text_divider" :src="service.divider" alt="divider" />
@@ -75,13 +76,22 @@ export default {
   margin-bottom: 120px;
   border: none;
 }
+.services_card:hover {
+  .faw_icon {
+    animation: pulse-red 2s; /* Animate for 1.5 seconds on hover */
+    
+  }
+  .service_name{
+    color:#ee6059
+  }
+}
 .faw_icon {
   height: 40px;
   padding: 20px;
   border: 1px solid salmon;
   border-radius: 50%;
 }
-.text_divider{
+.text_divider {
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -91,8 +101,25 @@ export default {
   color: rgb(145, 145, 145);
   // background-image: url(../../assets/images/divider-x-red.png);
 }
-.services_container{
+.services_container {
   width: 1100px;
   margin: auto;
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0px rgba(255, 82, 82, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(255, 82, 82, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0px rgba(255, 82, 82, 0);
+  }
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
   <section class="signup_section">
     <div class="signup_container">
-      <div class="container d-flex flex-row justify-content-between">
-        <img
+      <div class="container d-flex flex-row justify-content-between signup_wrap">
+        <img class="col-6 img-fluid"
           src="../../assets/images/home_img-compressor.jpg"
           alt="signupimg"
         />
-        <div class="signup_forms">
+        <div class="signup_forms col-6">
           <h3>Sign Up For A Free Training Session!</h3>
           <form class="d-flex flex-column align-items-start form_container">
             <div class="form-group">
@@ -44,6 +44,18 @@ export default {};
   .signup_container{
     width: 1100px;
     margin: auto;
+    img{
+      transition: all 0.5s ease-in-out;
+      height: 312px;
+      padding-right: 20px;
+    }
+    img:hover{
+      transform: scale(1.05);
+      
+    }
+  }
+  .signup_wrap{
+    padding: 0;
   }
 .signup_section {
   padding-top: 130px;
@@ -54,6 +66,7 @@ export default {};
   h3 {
     color: white;
     margin-bottom: 45px;
+    padding-left: 20px;
   }
 }
 .btn_submit {
