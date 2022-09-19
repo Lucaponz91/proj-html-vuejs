@@ -65,7 +65,7 @@
         Powered by <a href=""><span class="highlight"> Boolean Classe70</span></a>
       </p>
       <div class="icon_container">
-        <a href=""><font-awesome-icon icon="fa-brands fa-facebook-f" /></a>
+        <a id="fbicon" href=""><font-awesome-icon icon="fa-brands fa-facebook-f" /></a>
         <a href=""><font-awesome-icon icon="fa-brands fa-twitter" /></a>
         <a href=""><font-awesome-icon icon="fa-brands fa-instagram" /></a>
         <a href=""><font-awesome-icon icon="fa-brands fa-youtube" /></a>
@@ -150,5 +150,8 @@ p {
       background-color: #1E2123;
     }
   }
+}
+#fbicon{
+  padding-inline: 15px;
 }
 </style>
